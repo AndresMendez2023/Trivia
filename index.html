@@ -3,49 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>juego de preguntas</title>
+    <title>juego de capitales</title>
     <link rel="stylesheet" href="estilos.css">
     <script src="juego.js"></script>
 </head>
 <body>
-    <h1>Juego de preguntas</h1>
-    <section id="juego">
-        <div class="contenedor-pregunta" id="0">
-            <h2>1 - ¿Cual es el pais mas pequeño del mundo?</h2>
-            <div class="opciones">
-                <label for="" id="l00">
-                    <input type="radio" name="p0" onclick="seleccionar(0,0)">
-                    <span>Estado Vaticano</span>
-                    <span id="p00"></span>
-                </label>
-                <label for="" id="l01">
-                    <input type="radio" name="p0" onclick="Seleccionar(0,1)">
-                    <span>Monaco</span>
-                    <span id="p01"></span>
-                </label>
-                <label for="" id="l02">
-                    <input type="radio" name="p0" onclick="seleccionar(0,2)">
-                    <span>San Marino</span>
-                    <span id="p02"></span>
-                </label>
-                <label for="" id="l03">
-                    <input type="radio" name="p0" onclick="seleccionar(0,2)">
-                    <span>shangai</span>
-                    <span id="p03"></span>
-                </label>
-                <label for="" id="l04">
-                    <input type="radio" name="p0" onclick="seleccionar(0,2)">
-                    <span>Isla Marshall</span>
-                    <span id="p04"></span>
-                </label>
-                <label for="" id="l05">
-                    <input type="radio" name="p0" onclick="seleccionar(0,2)">
-                    <span>Tavulu</span>
-                    <span id="p05"></span>
-                </label>
-            </div>
-        </div>
-    </section>            
-    <button id="Corregir">corregir</button>
+    <header>
+        <h1> QUIZ GAME </h1>
+        <P>Juego de capitales</P>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h3>1-¿Cual es la capital de Italia?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Turin
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Napoles
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0"onclick="respuesta(0,this)">Roma
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2-¿Cual es la capital de Noruega?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Oslo
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Praga
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Belgrado
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3-¿Cual es la capital de Peru?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Bogota
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Lima
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">La paz
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4-¿Cual es la capital de Colombia?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">Bogota
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">Buenos Aires
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">Caracas
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5-¿Cual es la capital de España?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Barcelona
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Valencia
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Madrid
+            </label>
+        </section>
+        <section id="p5">
+            <h3>6-¿Cual es la capital de Portugal?</h3>
+            <label>
+                <input type="radio" value="1" name="p5" onclick="respuesta(5,this)">Porto
+            </label>
+            <label>
+                <input type="radio" value="2" name="p5" onclick="respuesta(5,this)">Lisboa
+            </label>
+            <label>
+                <input type="radio" value="3" name="p5" onclick="respuesta(5,this)">Figueiras
+            </label>
+        </section>
+        <button onclick=""corregir()>Corregir</button>
+        <h2>cantidad acertadas <span id="resultado"></span></h2>
+    </div>
 </body>               
 </html>

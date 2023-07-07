@@ -1,77 +1,53 @@
 *{
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
-body{
-    font-size: 20px;
-    background: blanchedalmond;
-    padding-bottom: 50px;
-}
-h1{
+header{
     text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;    
 }
-#juego{
-    max-width: 800px;
+.container{
+    max-width: 700px;
     margin: auto;
+    padding: 20px;    
 }
-.contenedor-pregunta{
-    border: 1px solid orange;
-    border-radius: 10px;
+section{
+    border: 2px solid #5624d0;
+    border-radius: 7px;
     padding: 10px;
-    margin-bottom: 20px;
-    background: paleturquoise;
+    margin: 10px 0;
 }
 label{
-    display: flex;
-    font-size: 22px;
-    margin-bottom: 10px;
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
     cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
 }
-input{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-.correcta{
-    background-color: green;
-}
-.incorrecta{
-    background-color: red;
-}
-.acierto{
-    font-size: 20px;
-    background-color: yellowgreen;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #000;
-    margin-left: 15px;
-}
-.no-acierto{
-    font-size: 20px;
-    background-color: darkred;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #000;
-    margin-left: 15px;
+label:hover{
+    background: #cec0fc;    
 }
 button{
-    width: fit-content;
+    width: 80%;
     display: block;
     margin: auto;
+    padding: 10px;
+    background-color: #76d7c8;
     border: none;
-    background: black;
-    color: beige;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 20px;
     cursor: pointer;
+    border-radius: 20px;    
+}
+button:hover{
+    background: #000;
+    color: #fff;    
+}
+h2{
+    text-align: center;
+}
+#resultado{
+    font-size: 30px;
+    color: darkred;
 }
